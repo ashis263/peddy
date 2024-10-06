@@ -17,10 +17,10 @@
             theme: {
                 extend: {
                     fontFamily: {
-                    lato: "lato",
-                },
-                colors: {
-                }
+                        lato: "lato",
+                    },
+                    colors: {
+                    }
                 }
             }
         }
@@ -28,8 +28,47 @@
     <title>Peddy</title>
 </head>
 
-<body class="font-lato">
-    
+<body class="font-lato w-11/12 mx-auto max-w-screen-lg">
+    <header>
+        <nav>
+            <div class="navbar bg-base-100 items-center">
+                <div class="navbar-start">
+                    <div class="dropdown text-gray-500">
+                        <div tabindex="0" role="button" class="btn btn-ghost sm:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a>Home</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex justify-between items-center gap-2">
+                        <img class="w-1/4 sm:w-auto" src="./images/logo.webp" alt="Logo">
+                        <h2 class="btn btn-ghost font-bold px-0 text-xl sm:text-3xl">Peddy</h2>
+                    </div>
+                </div>
+                <div class="navbar-center hidden sm:flex text-gray-500">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-7 sm:size-9 border-2 rounded-full p-1 sm:p-2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                      </svg>
+                      
+                </div>
+            </div>
+        </nav>
+    </header>
 </body>
 
 </html>
