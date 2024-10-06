@@ -63,30 +63,54 @@
                     </ul>
                 </div>
                 <div class="navbar-end">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-7 sm:size-9 border-2 rounded-full p-1 sm:p-2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
-                      </svg>
-                      
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-7 sm:size-9 border-2 rounded-full p-1 sm:p-2">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                    </svg>
+
                 </div>
             </div>
         </nav>
         <!-- navbar ends here -->
 
         <!-- banner starts here -->
-         <div class="w-4/5 sm:w-1/2 mx-auto flex flex-col-reverse sm:block">
+        <div class="w-4/5 sm:w-3/4 lg:w-1/2 mx-auto flex flex-col-reverse sm:block">
             <div class="text-center space-y-3 sm:space-y-5">
                 <div class="flex justify-center gap-1 items-center">
                     <h4 class="text-gray-500 text-lg sm:text-xl font-semibold">Bringing Families Together</h4>
-                    <img class="w-6 h-6" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmmWOEGQwbH_GkZEPu7qC0o3TjQkfJbqfDECocmxugQh6Kjyi_QDMUaDd-eBuVDa5FBnA&usqp=CAU" alt="">
+                    <img class="w-6 h-6"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmmWOEGQwbH_GkZEPu7qC0o3TjQkfJbqfDECocmxugQh6Kjyi_QDMUaDd-eBuVDa5FBnA&usqp=CAU"
+                        alt="">
                 </div>
                 <h1 class="text-black text-4xl sm:text-5xl font-extrabold">Your Path To Adoption Starts here</h1>
-                <p class="text-gray-500">We believe every pet deserves a loving home. Whether you’re looking for a playful puppy, a cuddly kitten, or a wise old soul, our dedicated team is here to help you find your perfect match!</p>
-                <button class="btn bg-colorPrimary text-white px-10">View More</button>
+                <p class="text-gray-500">We believe every pet deserves a loving home. Whether you’re looking for a
+                    playful puppy, a cuddly kitten, or a wise old soul, our dedicated team is here to help you find your
+                    perfect match!</p>
+                <div>
+                    <a href="#adopt-section"><button class="btn bg-colorPrimary text-white px-10">View More</button></a>
+                </div>
             </div>
             <img src="./images/pet.webp" alt="a dog and a cat on the back of the dog">
-         </div>
+        </div>
         <!-- banner ends here -->
     </header>
+
+    <main>
+        <section id="adopt-section" class="my-5 sm:my-10 space-y-3 sm:space-y-5">
+            <div class="w-4/5 sm:w-3/4 lg:w-1/2 mx-auto  space-y-3 sm:space-y-5 text-center">
+                <h2 class="text-2xl sm:text-4xl font-bold">Adopt Your Best Friend</h2>
+                <p class="text-gray-500">In a world filled with love and companionship, there’s nothing quite like the
+                    bond between a person and their pet. When you adopt a furry friend, you’re not just gaining a pet;
+                    you’re welcoming a loyal companion into your life.</p>
+            </div>
+            <!-- pet category buttons container -->
+            <div id="category-container" class="w-4/5 sm:w-11/12 mx-auto grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-5">
+            </div>
+            <!-- pet category buttons container ends -->
+        </section>
+    </main>
+    <script src="./js/categoryNames.js"></script>
 </body>
 
 </html>
