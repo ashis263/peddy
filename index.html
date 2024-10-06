@@ -20,6 +20,7 @@
                         lato: "lato",
                     },
                     colors: {
+                        colorPrimary: 'rgb(14, 122, 129)'
                     }
                 }
             }
@@ -30,7 +31,8 @@
 
 <body class="font-lato w-11/12 mx-auto max-w-screen-xl">
     <header>
-        <nav>
+        <!-- navbar starts here -->
+        <nav class="my-5">
             <div class="navbar bg-base-100 items-center">
                 <div class="navbar-start">
                     <div class="dropdown text-gray-500">
@@ -68,6 +70,22 @@
                 </div>
             </div>
         </nav>
+        <!-- navbar ends here -->
+
+        <!-- banner starts here -->
+         <div class="w-4/5 sm:w-1/2 mx-auto flex flex-col-reverse sm:block">
+            <div class="text-center space-y-3 sm:space-y-5">
+                <div>
+                    <h4 class="text-gray-500 text-lg sm:text-xl font-semibold">Bringing Families Together</h4>
+                    <img src="" alt="">
+                </div>
+                <h1 class="text-black text-4xl sm:text-5xl font-extrabold">Your Path To Adoption Starts here</h1>
+                <p class="text-gray-500">We believe every pet deserves a loving home. Whether you’re looking for a playful puppy, a cuddly kitten, or a wise old soul, our dedicated team is here to help you find your perfect match!</p>
+                <button class="btn bg-colorPrimary text-white px-10">View More</button>
+            </div>
+            <img src="./images/pet.webp" alt="a dog and a cat on the back of the dog">
+         </div>
+        <!-- banner ends here -->
     </header>
 </body>
 
