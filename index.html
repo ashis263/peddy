@@ -79,13 +79,13 @@
             <div class="text-center space-y-3 sm:space-y-5">
                 <div class="flex justify-center gap-1 items-center">
                     <h4 class="text-gray-500 text-lg sm:text-xl font-semibold">Bringing Families Together</h4>
-                    <img class="w-6 h-6"
+                    <img class="w-6 h-6 hidden sm:block"
                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmmWOEGQwbH_GkZEPu7qC0o3TjQkfJbqfDECocmxugQh6Kjyi_QDMUaDd-eBuVDa5FBnA&usqp=CAU"
                         alt="">
                 </div>
                 <h1 class="text-black text-4xl sm:text-5xl font-extrabold">Your Path To Adoption Starts here</h1>
                 <p class="text-gray-500">We believe every pet deserves a loving home. Whether you’re looking for a
-                    playful puppy, a cuddly kitten, or a wise old soul, our dedicated team is here to help you find your
+                    playful puppy, a cuddly kitten, our dedicated team is here to help you find your
                     perfect match!</p>
                 <div>
                     <a href="#adopt-section"><button class="btn bg-colorPrimary text-white px-10">View More</button></a>
@@ -105,12 +105,29 @@
                     you’re welcoming a loyal companion into your life.</p>
             </div>
             <!-- pet category buttons container -->
-            <div id="category-container" class="w-4/5 sm:w-11/12 mx-auto grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-5">
+            <div id="category-container"
+                class="w-4/5 sm:w-11/12 mx-auto grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-5">
             </div>
             <!-- pet category buttons container ends -->
+            <div class="w-4/5 sm:w-3/4 lg:w-11/12 mx-auto flex justify-between items-center">
+                <h4 class="text-xl font-bold">Best Deal For You</h4>
+                <button id="sort-btn" class="btn bg-colorPrimary text-white">Sort by Price</button>
+            </div>
+            <div class="w-4/5 sm:w-3/4 lg:w-11/12 mx-auto flex justify-between">
+                <!-- pet card container starts -->
+                <div id="pet-card-container" class="w-[68%] grid gap-2 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+                </div>
+                <!-- pet card container ends -->
+                
+                <!-- liked pet container starts -->
+                <div class="liked-pet w-[30%] border-2 rounded-xl">
+                </div>
+                <!-- liked pet container ends -->
+            </div>
         </section>
     </main>
     <script src="./js/categoryNames.js"></script>
+    <script src="./js/pets.js"></script>
 </body>
 
 </html>
