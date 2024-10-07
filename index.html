@@ -123,16 +123,29 @@
                 <!-- pet card container starts -->
                 <div id="pet-card-container" class="w-[68%] grid gap-2 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
                 </div>
+                <!-- modals start -->
                 <dialog id="details-modal" class="modal">
                     <div class="modal-box">
-                      <div id="details-modal-info-container" class="space-y-2 sm:space-y-5"></div>
-                      <div class="modal-action">
-                        <form class="w-full" method="dialog">
-                          <button class="w-full btn btn-sm bg-btnBg border-btnBg">Cancel</button>
-                        </form>
-                      </div>
+                        <div id="details-modal-info-container" class="space-y-2 sm:space-y-5"></div>
+                        <div class="modal-action">
+                            <form class="w-full" method="dialog">
+                                <button class="w-full btn btn-sm bg-btnBg border-btnBg">Cancel</button>
+                            </form>
+                        </div>
                     </div>
-                  </dialog>
+                </dialog>
+                <dialog id="adopt-modal" class="modal">
+                    <div class="modal-box">
+                        <div class="flex flex-col items-center space-y-2 sm:space-y-5">
+                            <img class="w-10" src="https://cdn.pixabay.com/photo/2021/02/19/13/13/hands-6030186_960_720.png"
+                                alt="handshake icon">
+                            <h2 class="text-2xl sm:text-4xl font-bold">Congrats</h2>
+                            <p class="text-gray-500">Adoptation Process is Started for You</p>
+                            <h1 id="counter" class="text-black text-4xl sm:text-5xl font-extrabold">3</h1>
+                        </div>
+                    </div>
+                </dialog>
+                <!-- modals end -->
                 <!-- pet card container ends -->
 
                 <!-- liked pet container starts -->
@@ -186,7 +199,8 @@
             <div class="sm:w-3/4 sm:justify-self-end">
                 <h6 class="pb-2 sm:pb-5 text-white text-sm sm:text-lg">Drop A Message</h6>
                 <input type="text" placeholder="Your Message" class="input input-ghost w-3/4 sm:w-full" />
-                <button id="sort-btn" class="btn bg-colorPrimary text-white border-none mt-1 sm:mt-3 w-3/4 sm:w-full">Send</button>
+                <button id="sort-btn"
+                    class="btn bg-colorPrimary text-white border-none mt-1 sm:mt-3 w-3/4 sm:w-full">Send</button>
             </div>
         </div>
     </footer>
@@ -195,6 +209,7 @@
     <script src="./js/getPetData.js"></script>
     <script src="./js/getThumbnailWhenLiked.js"></script>
     <script src="./js/getDataById.js"></script>
+    <script src="./js/adoptButton.js"></script>
 </body>
 
 </html>

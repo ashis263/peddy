@@ -25,9 +25,11 @@ const getCategorizedPetData = async (id) => {
 
 function addPetCard(pets) {
     const petCardContainer = document.getElementById('pet-card-container');
+    const likedPetContainer = document.getElementById('liked-pet-container');
     const loadingSpinner = document.getElementById('loading-spinner');
     loadingSpinner.classList.remove('hidden');
     petCardContainer.innerHTML = '';
+    likedPetContainer.classList.add('hidden');
     setTimeout(() => {
         if (pets.length === 0) {
             petCardContainer.classList.remove('grid');
@@ -77,7 +79,7 @@ function addPetCard(pets) {
                         <button id="${pet.petId}" onclick="getThumbnailWhenLiked('${pet.petId}')" class="btn btn-outline p-1 px-2 border-gray-200 btn-sm">
                             <i  class="fa-regular fa-thumbs-up"></i>
                         </button>
-                        <button class="btn btn-outline btn-sm text-xs p-1 px-2 border-gray-200 text-colorPrimary">Adopt</button>
+                        <button  id="${pet.petId}_" onclick="showAdoptModal('${pet.petId}')" class="btn btn-outline btn-sm text-xs p-1 px-2 border-gray-200 text-colorPrimary">Adopt</button>
                         <button id="${pet.petId}" onclick="dataById('${pet.petId}')" class="btn btn-outline btn-sm text-xs p-1 px-2 border-gray-200 text-colorPrimary">Details</button>
                     </div>
                 `
@@ -85,5 +87,6 @@ function addPetCard(pets) {
             }
         }
         loadingSpinner.classList.add('hidden');
+        likedPetContainer.classList.remove('hidden');
     }, 2000);
 }
