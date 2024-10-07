@@ -1,10 +1,10 @@
-const getPetData = async () => {
+const getAllPetData = async () => {
     const response = await fetch('https://openapi.programming-hero.com/api/peddy/pets');
     const data = await response.json();
     addPetCard(data.pets);
 }
 
-getPetData();
+getAllPetData();
 
 const getCategorizedPetData = async (id) => {
     const response = await fetch(`https://openapi.programming-hero.com/api/peddy/category/${id}`);
@@ -74,8 +74,8 @@ function addPetCard(pets) {
                         <p class="text-gray-500 text-xs sm:text-md">Price: ${(pet.price === undefined || pet.price === null) ? 'Not Available' : pet.price} $</p>
                     </div>
                     <div class="flex justify-between pt-2">
-                        <button class="btn btn-outline p-1 px-2 border-gray-200 btn-sm">
-                            <i  id="${pet.petId}" class="fa-regular fa-thumbs-up"></i>
+                        <button id="${pet.petId}" onclick="getThumbnailWhenLiked('${pet.petId}')" class="btn btn-outline p-1 px-2 border-gray-200 btn-sm">
+                            <i  class="fa-regular fa-thumbs-up"></i>
                         </button>
                         <button class="btn btn-outline btn-sm text-xs p-1 px-2 border-gray-200 text-colorPrimary">Adopt</button>
                         <button class="btn btn-outline btn-sm text-xs p-1 px-2 border-gray-200 text-colorPrimary">Details</button>
