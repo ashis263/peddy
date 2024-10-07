@@ -30,8 +30,8 @@
     <title>Peddy</title>
 </head>
 
-<body class="font-lato w-11/12 mx-auto max-w-screen-xl">
-    <header>
+<body class="font-lato max-w-screen-2xl w-full mx-auto">
+    <header class="w-11/12 mx-auto">
         <!-- navbar starts here -->
         <nav class="my-5">
             <div class="navbar bg-base-100 items-center">
@@ -124,14 +124,63 @@
                 <div id="pet-card-container" class="w-[68%] grid gap-2 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
                 </div>
                 <!-- pet card container ends -->
-                
+
                 <!-- liked pet container starts -->
-                <div id="liked-pet-container" class="liked-pet w-[30%] border-2 rounded-xl grid grid-cols-1 sm:grid-cols-2 content-start">
+                <div id="liked-pet-container"
+                    class="liked-pet w-[30%] border-2 rounded-xl grid grid-cols-1 sm:grid-cols-2 content-start">
                 </div>
                 <!-- liked pet container ends -->
             </div>
         </section>
     </main>
+
+
+    <footer class="bg-black text-white text-xs sm:text-sm">
+        <div class="w-11/12 mx-auto  grid gap-5 grid-cols-1 sm:grid-cols-3 py-10 sm:py-20">
+            <div class="space-y-3">
+                <div class="flex justify-start items-center gap-2">
+                    <img class="" src="./images/logo.webp" alt="Logo">
+                    <h2 class="font-bold px-0 text-xl sm:text-3xl">Peddy</h2>
+                </div>
+                <div class="space-y-2 text-gray-500">
+                    <p>Location: av. Washington 165, NY CA 54002</p>
+                    <p>Phone: +31 85 964 47 25</p>
+                    <p>Email: info@yourdomain.com</p>
+                    <p>Openings hours: 9.00 AM - 5.00 PM</p>
+                </div>
+                <div class="flex items-center gap-2">
+                    <a href=""><img class="w-5 sm:w-8 h-5 sm:h-8"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Facebook_logo_%28square%29.png/900px-Facebook_logo_%28square%29.png"
+                            alt="facebook icon"></a>
+                    <a href=""><img class="w-9 sm:w-12"
+                            src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/x-social-media-logo-icon.png"
+                            alt="x icon"></a>
+                    <a href=""><img class="w-5 h-7 sm:h-10 sm:w-8"
+                            src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="youtube icon"></a>
+                    <a href=""><img class="w-7 sm:w-10"
+                            src="https://static.vecteezy.com/system/resources/previews/023/986/514/original/instagram-logo-instagram-logo-transparent-instagram-icon-transparent-free-free-png.png"
+                            alt="instagram i"></a>
+                </div>
+            </div>
+            <div class="sm:justify-self-center">
+                <nav class="text-gray-500">
+                    <h6 class="pb-2 sm:pb-5 text-white text-sm sm:text-lg">Useful Links</h6>
+                    <div class="flex flex-col space-y-1">
+                        <a class="link link-hover">Home</a>
+                        <a class="link link-hover">About Us</a>
+                        <a class="link link-hover">Animals</a>
+                        <a class="link link-hover">Foundation</a>
+                    </div>
+                </nav>
+            </div>
+            <div class="sm:w-3/4 sm:justify-self-end">
+                <h6 class="pb-2 sm:pb-5 text-white text-sm sm:text-lg">Drop A Message</h6>
+                <input type="text" placeholder="Your Message" class="input input-ghost w-3/4 sm:w-full" />
+                <button id="sort-btn" class="btn bg-colorPrimary text-white border-none mt-1 sm:mt-3 w-3/4 sm:w-full">Send</button>
+            </div>
+        </div>
+    </footer>
+
     <script src="./js/categoryNames.js"></script>
     <script src="./js/pets.js"></script>
     <script src="./js/likeBtn.js"></script>
