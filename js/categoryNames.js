@@ -7,16 +7,14 @@ const getCategoryNames = async () => {
 function addCategoryButton(categories){
     const categoryContainer = document.getElementById('category-container');
     for(category of categories){
-        const button = document.createElement('button');
-        button.classList.add('btn');
-        button.classList.add('btn-outline');
-        button.classList.add('border-gray-200');
-        button.classList.add('rounded-xl');
-        button.innerHTML = `
-            <img class="w-5 sm:w-8 h-5 sm:h-8" src="${category.category_icon}"/>
-            <p class="text-md sm:text-lg font-extrabold">${category.category}s</p>
+        const div = document.createElement('div');
+        div.innerHTML = `
+            <button id="${category.category}" onclick="getCategorizedPetData('${category.category}')" class="btn btn-outline w-28 sm:w-40 category-btn border-gray-200 rounded-xl">
+                <img class="w-5 sm:w-8 h-5 sm:h-8" src="${category.category_icon}"/>
+                <p class="text-md sm:text-lg font-extrabold">${category.category}s</p>
+            </button>
         `
-        categoryContainer.appendChild(button);
+        categoryContainer.appendChild(div);
     }
 }
 
