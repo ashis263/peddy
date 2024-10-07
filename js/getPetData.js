@@ -78,7 +78,7 @@ function addPetCard(pets) {
                             <i  class="fa-regular fa-thumbs-up"></i>
                         </button>
                         <button class="btn btn-outline btn-sm text-xs p-1 px-2 border-gray-200 text-colorPrimary">Adopt</button>
-                        <button class="btn btn-outline btn-sm text-xs p-1 px-2 border-gray-200 text-colorPrimary">Details</button>
+                        <button id="${pet.petId}" onclick="dataById('${pet.petId}')" class="btn btn-outline btn-sm text-xs p-1 px-2 border-gray-200 text-colorPrimary">Details</button>
                     </div>
                 `
                 petCardContainer.appendChild(div);

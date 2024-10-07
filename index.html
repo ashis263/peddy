@@ -123,6 +123,16 @@
                 <!-- pet card container starts -->
                 <div id="pet-card-container" class="w-[68%] grid gap-2 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
                 </div>
+                <dialog id="details-modal" class="modal">
+                    <div class="modal-box">
+                      <div id="details-modal-info-container" class="space-y-2 sm:space-y-5"></div>
+                      <div class="modal-action">
+                        <form class="w-full" method="dialog">
+                          <button class="w-full btn btn-sm bg-btnBg border-btnBg">Cancel</button>
+                        </form>
+                      </div>
+                    </div>
+                  </dialog>
                 <!-- pet card container ends -->
 
                 <!-- liked pet container starts -->
@@ -183,7 +193,8 @@
 
     <script src="./js/getCategoryData.js"></script>
     <script src="./js/getPetData.js"></script>
-    <script src="./js/getThumbnailWhenLiked.js.js"></script>
+    <script src="./js/getThumbnailWhenLiked.js"></script>
+    <script src="./js/getDataById.js"></script>
 </body>
 
 </html>
