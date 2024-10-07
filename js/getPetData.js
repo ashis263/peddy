@@ -90,3 +90,11 @@ function addPetCard(pets) {
         likedPetContainer.classList.remove('hidden');
     }, 2000);
 }
+
+const sortByPrice = async () => {
+    const response = await fetch('https://openapi.programming-hero.com/api/peddy/pets');
+    const data = await response.json();
+    const pets = data.pets;
+    pets.sort((a, b) => b.price - a.price);
+    addPetCard(data.pets);
+}
