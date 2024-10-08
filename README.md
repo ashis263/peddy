@@ -19,5 +19,5 @@ This projects is for implementing the learnings of Javascript ES6, Asynchronus J
 - "for of" loop for looping through array.
 
 ## Live links for this project
-1. [https://peddy.ashis263.surge.sh/](https://peddy.ashis263.surge.sh/)
-2. [https://peddy-ashis263.netlify.app/](https://peddy-ashis263.netlify.app/)
+1. [Link using Surge](https://peddy.ashis263.surge.sh/)
+2. [Link using Netlify](https://peddy-ashis263.netlify.app/)
