@@ -30,7 +30,7 @@ const addDetailsModal = (pet) => {
             </div>
             <div class="flex gap-2 items-center">
                 <i class="fa-solid fa-dollar-sign text-gray-500 w-1 p-0"></i>
-                <p class="text-gray-500 text-xs sm:text-md">Price: ${(pet.price === undefined || pet.price === null) ? 'Not Available' : pet.price} $</p>
+                <p class="text-gray-500 text-xs sm:text-md">Price: ${(pet.price === undefined || pet.price === null) ? 'Not Available' : pet.price + '$'}</p>
             </div>
             <div class="flex gap-3 items-center">
                 <i class="fa-solid fa-syringe text-gray-500 w-1 p-0"></i>
