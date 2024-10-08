@@ -16,4 +16,5 @@ function showAdoptModal(id){
         adoptModal.close();
     }, 3000);
     adoptButton.setAttribute('disabled', true);
+    adoptButton.innerText = 'Adopted';
 }

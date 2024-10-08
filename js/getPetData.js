@@ -38,7 +38,7 @@ function addPetCard(pets) {
                     <div class="flex flex-col items-center text-center">
                         <img class="w-3/5 sm:w-auto" src="./images/error.webp" alt="error logo">
                         <h2 class="text-xl sm:text-2xl font-bold">No Information Available</h2>
-                        <p class="text-gray-500 text-xs sm:text-sm">We do not have any bird right now. You can explore other pet sections.</p>
+                        <p class="text-gray-500 text-xs sm:text-sm">We do not have any pet in this category right now. Please explore other pet categories.</p>
                     </div>
                 </div>
             `
@@ -73,7 +73,7 @@ function addPetCard(pets) {
                     </div>
                     <div class="flex gap-2 items-center">
                         <i class="fa-solid fa-dollar-sign text-gray-500 w-1 p-0"></i>
-                        <p class="text-gray-500 text-xs sm:text-md">Price: ${(pet.price === undefined || pet.price === null) ? 'Not Available' : pet.price} $</p>
+                        <p class="text-gray-500 text-xs sm:text-md">Price: ${(pet.price === undefined || pet.price === null) ? 'Not Available' : pet.price+'$'}</p>
                     </div>
                     <div class="flex justify-between pt-2">
                         <button id="${pet.petId}" onclick="getThumbnailWhenLiked('${pet.petId}')" class="btn btn-outline p-1 px-2 border-gray-200 btn-sm">
