@@ -6,11 +6,11 @@ This projects is for implementing the learnings of Javascript ES6, Asynchronus J
 
 ## Features
 **5 key features of this project:**
-1. When "View More" button is clicked it shows the "Adopt Your Best Friend" Section.
-2. When pet category buttons are clicked, that button is becomes active and shows thats category datas.
-3. When like button on any pet card is clicked, that pet's photo get saved in the right side container.
-4. Clicking "Adopt" button on pet card a modal is shown, which closes automatically after countdowning from three to one.
-5. By clicking "details" button on pet card users can see the detailed information about that pet in which the button is clicked.
+1. When "View More" button is clicked, it shows the "Adopt Your Best Friend" Section.
+2. When any pet category button is clicked, that button becomes active and shows that category pets.
+3. When like button on any pet card is clicked, that card's photo gets saved in the right side container.
+4. Clicking "Adopt" button on pet card shows a modal, which closes automatically after countdowning from three to one.
+5. By clicking "details" button on pet card, user can see the detailed information about that pet in which the button is clicked.
 
 ## ES6 features used in this project
 - "let" and ""const" keyword for variable declaration.
